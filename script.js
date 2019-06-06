@@ -84,3 +84,17 @@ main.addEventListener("click",function(e){
         }
     }
 })
+const searchb = document.getElementById('searchBar');
+searchb.addEventListener('keyup',function(e){
+    const term = e.target.value;
+    const searchTitle = document.querySelectorAll('.todo-list');
+    Array.from(searchTitle).forEach(function(searchTitles){
+        const searched= searchTitles.firstChild.textContent;
+        if(searched.indexOf(term)!=-1){
+            searchTitles.style.display="flex";
+        }
+        else{
+            searchTitles.style.display="none";
+        }
+    })
+})
