@@ -1,8 +1,13 @@
+.all{
+      box-shadow: 5px 5px 5px grey;
+    max-width: 700px;
+    margin :auto;
+}
 .todo{
   max-width: 700px;
     margin :auto;
+    height: auto;
     background-color: white;
-    box-shadow: 5px 5px 5px grey;
 }
 .todo-head{
     padding: 10px;
@@ -15,7 +20,7 @@
 .todo-input{
     text-align: center;
     padding: 10px 10px;
-    background-color: cornsilk
+    background-color: cornsilk;
 }
 .form{
     padding: 7px;
@@ -87,7 +92,33 @@
     transition: 0.4s;
 }
 .search{
+    display: none;
     text-align: center;
     background-color: azure;
     padding: 10px 10px 10px 10px;
+}
+.tab{
+    display: flex;
+    background-color: blanchedalmond;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+#addTab, #searchTab{
+    padding: 10px;
+    border: 1px solid grey;
+    border-bottom: 0;
+    margin: 3px 3px 0 3px;
+    border-radius: 5px 5px 0 0;
+}
+#addTab{
+    background-color: cornsilk;
+}
+#addTab:hover{
+    background-color: cornsilk;
+    cursor: pointer;
+}
+
+#searchTab:hover{
+    background-color: azure;
+    cursor: pointer;
 }
