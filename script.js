@@ -98,3 +98,21 @@ searchb.addEventListener('keyup',function(e){
         }
     })
 })
+const addTab = document.getElementById('addTab');
+const bar = document.querySelector('.search');
+const searchTab = document.getElementById('searchTab');
+const bar1 = document.querySelector('.todo-input');
+addTab.addEventListener('click',function(e){
+    bar.style.display="none";
+    addTab.style.backgroundColor = "cornsilk";
+    searchTab.style.backgroundColor = "blanchedalmond";
+    bar1.style.display = "block";
+    searchTab.style.hover.backgroundColor =  "azure";
+})
+searchTab.addEventListener('click',function(e){
+    bar1.style.display="none";
+    searchTab.style.backgroundColor = "azure";
+    bar.style.display = "block";
+    addTab.style.backgroundColor = "blanchedalmond";
+    
+})
